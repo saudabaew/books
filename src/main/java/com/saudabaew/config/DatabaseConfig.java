@@ -3,6 +3,7 @@ package com.saudabaew.config;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
@@ -15,6 +16,7 @@ import java.beans.PropertyVetoException;
 /**
  * Created by 1 on 20.01.2018.
  */
+@Configuration
 @PropertySource("WEB-INF/classes/db.properties")
 public class DatabaseConfig {
     @Value("${db.type}")
