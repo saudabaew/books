@@ -1,28 +1,25 @@
 package com.saudabaew.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * Created by 1 on 20.01.2018.
  */
 @Entity
-@Table(name = "books")
+@Table(name = "book")
 public class Book {
     @Id
-    @GeneratedValue
-    private long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
     private String title;
     private String description;
     private String author;
     private String isbn;
     private int printYear;
-    private int readAlready;
+    private boolean readAlready;
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
@@ -70,11 +67,24 @@ public class Book {
         this.printYear = printYear;
     }
 
-    public int getReadAlready() {
+    public boolean getReadAlready() {
         return readAlready;
     }
 
-    public void setReadAlready(int readAlready) {
+    public void setReadAlready(boolean readAlready) {
         this.readAlready = readAlready;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", author='" + author + '\'' +
+                ", isbn='" + isbn + '\'' +
+                ", printYear=" + printYear +
+                ", readAlready=" + readAlready +
+                '}';
     }
 }

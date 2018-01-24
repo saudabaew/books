@@ -2,21 +2,28 @@ package com.saudabaew.config;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 
+import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 import java.beans.PropertyVetoException;
+import java.util.Properties;
 
 /**
  * Created by 1 on 20.01.2018.
  */
 @Configuration
+@EnableJpaRepositories({"com.saudabaew.repository"}) //найти все интерфесы в пакете "com.saudabaew.repository", которые помечены аннотацией @Repository и написать за тебя классы, которые бы имплементили этот интерфейс
 @PropertySource("WEB-INF/classes/db.properties")
 public class DatabaseConfig {
     @Value("${db.type}")
@@ -75,10 +82,22 @@ public class DatabaseConfig {
         LocalContainerEntityManagerFactoryBean bean = new LocalContainerEntityManagerFactoryBean();
         bean.setDataSource(dataSource);
         bean.setJpaVendorAdapter(jpaVendorAdapter);
-        /*Properties properties = new Properties();;
-        properties.setProperty("hibernate.hbm2ddl.auto", "create");
-        bean.setJpaProperties(properties);*/
-        bean.setPackagesToScan("net.ukrtel.ddns.ff.utilities.entities");
+//        Properties properties = new Properties();;
+//        properties.setProperty("hibernate.hbm2ddl.auto", "create");
+//        bean.setJpaProperties(properties);
+        bean.setPackagesToScan("com.saudabaew.entities");
         return bean;
+    }
+
+    @Bean   // setting JPA transaction manager
+    public JpaTransactionManager transactionManager(EntityManagerFactory entityManagerFactory) {
+        JpaTransactionManager manager = new JpaTransactionManager();
+        manager.setEntityManagerFactory(entityManagerFactory);
+        return manager;
+    }
+
+    @Bean   // translating hibernate's exceptions into spring's ones
+    public BeanPostProcessor persistenceTranslation() {
+        return new PersistenceExceptionTranslationPostProcessor();
     }
 }
