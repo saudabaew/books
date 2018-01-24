@@ -1,0 +1,7 @@
+com\saudabaew\config\WebAppInit.class
+com\saudabaew\web\MainController.class
+com\saudabaew\config\RootConfig.class
+com\saudabaew\repository\BookRepository.class
+com\saudabaew\config\WebConfig.class
+com\saudabaew\entities\Book.class
+com\saudabaew\config\DatabaseConfig.class

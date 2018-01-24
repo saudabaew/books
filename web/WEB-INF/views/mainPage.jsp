@@ -15,7 +15,7 @@
 <body>
 <h1 align="center">Книжная полка</h1>
 <c:if test="${!empty bookList}">
-    <table align="center" border="1px">
+    <table align="center" border="1px"  style="border-collapse: collapse">
         <tr>
             <th width="80">ID</th>
             <th width="120">Title</th>
