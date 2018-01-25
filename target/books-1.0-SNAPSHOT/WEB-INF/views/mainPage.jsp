@@ -10,20 +10,23 @@
 
 <html>
 <head>
+    <style>
+        <%@include file='style.css' %>
+    </style>
     <title>Книги</title>
 </head>
 <body>
-<h1 align="center">Книжная полка</h1>
+
 <c:if test="${!empty bookList}">
-    <table align="center" border="1px"  style="border-collapse: collapse">
+    <table>
         <tr>
             <th width="80">ID</th>
-            <th width="120">Title</th>
-            <th width="120">Description</th>
-            <th width="120">Author</th>
+            <th width="120">Название</th>
+            <th width="120">Описание</th>
+            <th width="120">Автор</th>
             <th width="120">ISBN</th>
-            <th width="60">PrintYear</th>
-            <th width="60">ReadAlready</th>
+            <th width="60">Год печати</th>
+            <th width="60">Прочтено</th>
         </tr>
         <c:forEach items="${bookList}" var="book">
             <tr>
