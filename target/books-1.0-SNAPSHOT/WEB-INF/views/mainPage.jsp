@@ -27,18 +27,23 @@
             <th width="120">ISBN</th>
             <th width="60">Год печати</th>
             <th width="60">Прочтено</th>
+            <th width="60">Операции</th>
         </tr>
         <c:forEach items="${bookList}" var="book">
             <tr>
                 <td>${book.id}</td>
-                <td>${book.title}</td>
+                <td><a href="/update/${book.id}">${book.title}</a></td>
                 <td>${book.description}</td>
                 <td>${book.author}</td>
                 <td>${book.isbn}</td>
                 <td>${book.printYear}</td>
                 <td>${book.readAlready}</td>
+                <td><a href="/delete/${book.id}/">Удалить</a></td>
             </tr>
         </c:forEach>
+        <tr>
+            <td colspan="8"><a href="/add">ДОБАВИТЬ КНИГУ</a></td>
+        </tr>
     </table>
 </c:if>
 

@@ -34,4 +34,6 @@ form{
     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
     font-size: 14px;
     color: #039;
+    position: fixed;
+    left: 40%;
 }

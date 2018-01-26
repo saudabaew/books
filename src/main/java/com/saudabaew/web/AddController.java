@@ -36,7 +36,7 @@ public class AddController {
         book.setIsbn(isbn);
         book.setPrintYear(printYear);
         bookRepository.saveAndFlush(book);
-        return "mainPage";
+        return "redirect:/";
     }
 }
 
