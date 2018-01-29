@@ -1,25 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8061b726-d18f-4d5a-887f-b8e0ef8cea07" name="Default" comment="Реализованы методы обновления и удаления данных. &#10;Добавлен функционал по работе с кириллицей.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/books_war_exploded/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/unnamed/WEB-INF/lib/books.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/books-1.0-SNAPSHOT/WEB-INF/classes/com/saudabaew/config/WebAppInit.class" afterPath="$PROJECT_DIR$/target/books-1.0-SNAPSHOT/WEB-INF/classes/com/saudabaew/config/WebAppInit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/books-1.0-SNAPSHOT/WEB-INF/classes/com/saudabaew/config/WebConfig.class" afterPath="$PROJECT_DIR$/target/books-1.0-SNAPSHOT/WEB-INF/classes/com/saudabaew/config/WebConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/books-1.0-SNAPSHOT/WEB-INF/classes/com/saudabaew/web/DeleteController.class" afterPath="$PROJECT_DIR$/target/books-1.0-SNAPSHOT/WEB-INF/classes/com/saudabaew/web/DeleteController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/books-1.0-SNAPSHOT/WEB-INF/classes/com/saudabaew/web/UpdateController.class" afterPath="$PROJECT_DIR$/target/books-1.0-SNAPSHOT/WEB-INF/classes/com/saudabaew/web/UpdateController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/saudabaew/config/WebAppInit.class" afterPath="$PROJECT_DIR$/target/classes/com/saudabaew/config/WebAppInit.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/saudabaew/config/WebConfig.class" afterPath="$PROJECT_DIR$/target/classes/com/saudabaew/config/WebConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/saudabaew/web/DeleteController.class" afterPath="$PROJECT_DIR$/target/classes/com/saudabaew/web/DeleteController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/saudabaew/web/UpdateController.class" afterPath="$PROJECT_DIR$/target/classes/com/saudabaew/web/UpdateController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignor" afterPath="$PROJECT_DIR$/.gitignor" />
+    <list default="true" id="8061b726-d18f-4d5a-887f-b8e0ef8cea07" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/saudabaew/config/WebAppInit.java" afterPath="$PROJECT_DIR$/src/main/java/com/saudabaew/config/WebAppInit.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/saudabaew/config/WebConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/saudabaew/config/WebConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/saudabaew/web/DeleteController.java" afterPath="$PROJECT_DIR$/src/main/java/com/saudabaew/web/DeleteController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/saudabaew/web/UpdateController.java" afterPath="$PROJECT_DIR$/src/main/java/com/saudabaew/web/UpdateController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/books-1.0-SNAPSHOT/WEB-INF/views/update.jsp" afterPath="$PROJECT_DIR$/target/books-1.0-SNAPSHOT/WEB-INF/views/update.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/views/update.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/update.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path=".idea/" />
@@ -127,8 +110,8 @@
       <file leaf-file-name="mainPage.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/mainPage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+            <state relative-caret-position="238">
+              <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -1104,7 +1087,7 @@
       <workItem from="1516846219559" duration="14593000" />
       <workItem from="1516931897839" duration="17442000" />
       <workItem from="1516956604889" duration="72000" />
-      <workItem from="1517195063787" duration="15134000" />
+      <workItem from="1517195063787" duration="15293000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлена страница About">
       <created>1516436843538</created>
@@ -1162,15 +1145,22 @@
       <option name="project" value="LOCAL" />
       <updated>1516956659975</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Реализованы методы обновления и удаления данных. &#10;Добавлен функционал по работе с кириллицей.">
+      <created>1517216408664</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1517216408664</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102420000" />
+    <option name="totallyTimeSpent" value="102579000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1191,7 +1181,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20954357" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27282158" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1688,8 +1678,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/mainPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        <state relative-caret-position="238">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding />
         </state>
       </provider>
