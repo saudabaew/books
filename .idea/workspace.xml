@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8061b726-d18f-4d5a-887f-b8e0ef8cea07" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/saudabaew/web/DeleteController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/saudabaew/web/UpdateController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/views/delete.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/views/update.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/books-1.0-SNAPSHOT/WEB-INF/views/about.jsp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/books-1.0-SNAPSHOT/WEB-INF/classes/com/saudabaew/web/MainController.class" afterPath="$PROJECT_DIR$/target/books-1.0-SNAPSHOT/WEB-INF/classes/com/saudabaew/web/MainController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/saudabaew/web/MainController.class" afterPath="$PROJECT_DIR$/target/classes/com/saudabaew/web/MainController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/saudabaew/web/AddController.java" afterPath="$PROJECT_DIR$/src/main/java/com/saudabaew/web/AddController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/saudabaew/web/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/com/saudabaew/web/MainController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/books-1.0-SNAPSHOT/WEB-INF/views/mainPage.jsp" afterPath="$PROJECT_DIR$/target/books-1.0-SNAPSHOT/WEB-INF/views/mainPage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/views/add.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/views/mainPage.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/mainPage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/views/style.css" afterPath="$PROJECT_DIR$/web/WEB-INF/views/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path=".idea/" />
@@ -1141,7 +1131,7 @@
       <workItem from="1516759078897" duration="14703000" />
       <workItem from="1516846219559" duration="14593000" />
       <workItem from="1516931897839" duration="17442000" />
-      <workItem from="1516956604889" duration="8000" />
+      <workItem from="1516956604889" duration="72000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлена страница About">
       <created>1516436843538</created>
@@ -1192,11 +1182,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516873503862</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Не работают ссылки на страницы редактирования и удаления книги">
+      <created>1516956659975</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1516956659975</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87222000" />
+    <option name="totallyTimeSpent" value="87286000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="0" />
@@ -1269,7 +1266,8 @@
     <MESSAGE value="Корректно выводит данные из базы в jsp" />
     <MESSAGE value=".idea должна быть удалена&#10;добавлен sql-скрипт" />
     <MESSAGE value="Добавлен метод add." />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен метод add." />
+    <MESSAGE value="Не работают ссылки на страницы редактирования и удаления книги" />
+    <option name="LAST_COMMIT_MESSAGE" value="Не работают ссылки на страницы редактирования и удаления книги" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
