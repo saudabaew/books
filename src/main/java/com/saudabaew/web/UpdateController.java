@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * Created by 1 on 26.01.2018.
@@ -20,6 +21,21 @@ public class UpdateController {
     @Autowired
     public UpdateController(BookRepository bookRepository) {
         this.bookRepository = bookRepository;
+    }
+
+    @RequestMapping(value = "/{id}", method = RequestMethod.POST)
+    public String update(@PathVariable(value = "id") int id, @RequestParam String title, @RequestParam String description,
+                         @RequestParam String author, @RequestParam String isbn, @RequestParam int printYear)
+    {
+        Book book = new Book();
+        book.setId(id);
+        book.setTitle(title);
+        book.setDescription(description);
+        book.setAuthor(author);
+        book.setIsbn(isbn);
+        book.setPrintYear(printYear);
+        bookRepository.saveAndFlush(book);
+        return "redirect:/";
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)

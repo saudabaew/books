@@ -14,28 +14,28 @@
 </head>
 <body>
 
-<form method="get">
+<form method="post">
     <label>ID:<br>
-        <input name="title" type="hidden" value="${book.id}"><br>
+        <input name="title" disabled value="${book.id}"><br>
     </label>
     <label>Название:<br>
         <input name="title" type="text" value="${book.title}"><br>
     </label>
     <label>
         Описание:<br>
-        <textarea name="description" rows="3"></textarea><br>
+        <input name="description" size="100" value="${book.description}"><br>
     </label>
     <label>
         Автор:<br>
-        <input name="author" type="text"><br>
+        <input name="author" type="text" value="${book.author}"><br>
     </label>
     <label>
         ISBN:<br>
-        <input name="isbn" type="text"><br>
+        <input name="isbn" type="text" value="${book.isbn}"><br>
     </label>
     <label>
         Год печати:<br>
-        <input name="printYear" type="text"><br><br>
+        <input name="printYear" type="text" value="${book.printYear}"><br><br>
         <input type="submit" value="Обновить"><br>
     </label>
 </form>
