@@ -18,23 +18,23 @@
 
 <form method="post">
     <label>Название:<br>
-        <input name="title" type="text"><br>
+        <input name="title" type="text" required="required"><br>
     </label>
     <label>
         Описание:<br>
-        <textarea name="description" rows="3"></textarea><br>
+        <textarea name="description" rows="3" required="required"></textarea><br>
     </label>
     <label>
         Автор:<br>
-        <input name="author" type="text"><br>
+        <input name="author" type="text" required="required"><br>
     </label>
     <label>
         ISBN:<br>
-        <input name="isbn" type="text"><br>
+        <input name="isbn" type="text" required="required"><br>
     </label>
     <label>
         Год печати:<br>
-        <input name="printYear" type="text"><br><br>
+        <input name="printYear" type="text" required="required"><br><br>
         <input type="submit" value="Добавить книгу"><br>
     </label>
 </form>

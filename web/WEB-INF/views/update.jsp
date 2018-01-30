@@ -11,33 +11,45 @@
 <html>
 <head>
     <title>Редактировать</title>
+    <style>
+        <%@include file='style.css' %>
+    </style>
 </head>
 <body>
 
 <form method="post">
     <label>ID:<br>
-        <input name="title" disabled value="${book.id}"><br>
+        <input name="title" disabled value="${book.id}" required="required"><br>
     </label>
     <label>Название:<br>
-        <input name="title" type="text" value="${book.title}"><br>
+        <input name="title" type="text" value="${book.title}" required="required"><br>
     </label>
     <label>
         Описание:<br>
-        <input name="description" size="100" value="${book.description}"><br>
+        <input name="description" size="100" value="${book.description}" required="required"><br>
     </label>
     <label>
         Автор:<br>
-        <input name="author" type="text" value="${book.author}"><br>
+        <input name="author" type="text" value="${book.author}" required="required"><br>
     </label>
     <label>
         ISBN:<br>
-        <input name="isbn" type="text" value="${book.isbn}"><br>
+        <input name="isbn" type="text" value="${book.isbn}" required="required"><br>
     </label>
     <label>
         Год печати:<br>
-        <input name="printYear" type="text" value="${book.printYear}"><br><br>
-        <input type="submit" value="Обновить"><br>
+        <input name="printYear" type="number" value="${book.printYear}" required="required"><br>
     </label>
+
+    <label>
+        <input name="readAlready" type="radio" value="1">Прочтено<br>
+    </label>
+
+    <label>
+        <input name="readAlready" type="radio" value="0" checked="checked">Не прочтено<br>
+    </label>
+
+    <input type="submit" value="Обновить">
 </form>
 
 <p>

@@ -25,7 +25,8 @@ public class UpdateController {
 
     @RequestMapping(value = "/{id}", method = RequestMethod.POST)
     public String update(@PathVariable(value = "id") int id, @RequestParam String title, @RequestParam String description,
-                         @RequestParam String author, @RequestParam String isbn, @RequestParam int printYear)
+                         @RequestParam String author, @RequestParam String isbn, @RequestParam int printYear,
+                         @RequestParam boolean readAlready)
     {
         Book book = new Book();
         book.setId(id);
@@ -34,6 +35,7 @@ public class UpdateController {
         book.setAuthor(author);
         book.setIsbn(isbn);
         book.setPrintYear(printYear);
+        book.setReadAlready(readAlready);
         bookRepository.saveAndFlush(book);
         return "redirect:/";
     }
