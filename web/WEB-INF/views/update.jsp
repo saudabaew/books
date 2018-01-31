@@ -30,7 +30,7 @@
     </label>
     <label>
         Автор:<br>
-        <input name="author" type="text" value="${book.author}" required="required"><br>
+        <input name="author" type="text" value="${book.author}" disabled><br>
     </label>
     <label>
         ISBN:<br>

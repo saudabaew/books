@@ -7,27 +7,35 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
 <html>
 <head>
-    <title>Title</title>
+    <title>Книги</title>
     <style>
         <%@include file='style.css' %>
     </style>
 </head>
 <body>
 
+<form method="post">
+    <label>
+        <input name="title" type="text" placeholder="Название книги">
+        <input type="submit" value="Поиск">
+    </label>
+</form>
+
 <c:if test="${!empty listBooks}">
     <table>
         <tr>
-            <th width="80">ID</th>
-            <th width="120">Название</th>
-            <th width="120">Описание</th>
-            <th width="120">Автор</th>
-            <th width="120">ISBN</th>
-            <th width="60">Год печати</th>
-            <th width="60">Прочтено</th>
-            <th width="60">Операции</th>
+            <th width="2%">ID</th>
+            <th>Название</th>
+            <th width="50%">Описание</th>
+            <th>Автор</th>
+            <th>ISBN</th>
+            <th width="5%">Год печати</th>
+            <th width="5%">Прочтено</th>
+            <th>Операции</th>
         </tr>
         <c:forEach items="${listBooks}" var="book">
             <tr>
@@ -47,7 +55,7 @@
             </tr>
         </c:forEach>
         <tr>
-            <td colspan="8"><a href="/add">ДОБАВИТЬ КНИГУ</a></td>
+            <td colspan="8" align="center"><a href="/add">ДОБАВИТЬ КНИГУ</a></td>
         </tr>
     </table>
 </c:if>

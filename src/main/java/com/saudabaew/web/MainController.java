@@ -28,31 +28,27 @@ public class MainController {
         this.bookRepository = bookRepository;
     }
 
-    @RequestMapping(method = RequestMethod.GET)
-    public ModelAndView listUsers(@RequestParam(required = false) Integer page) {
-        ModelAndView modelAndView = new ModelAndView("books");
+    @RequestMapping
+    public String listUsers(@RequestParam(required = false) Integer page, Model model) {
 
         List<Book> books = bookRepository.findAll();
         PagedListHolder<Book> pagedListHolder = new PagedListHolder<Book>(books);
         pagedListHolder.setPageSize(10);
-        modelAndView.addObject("maxPages", pagedListHolder.getPageCount());
+        model.addAttribute("maxPages", pagedListHolder.getPageCount());
 
         if(page==null || page < 1 || page > pagedListHolder.getPageCount())
             page=1;
 
-        modelAndView.addObject("page", page);
+        model.addAttribute("page", page);
 
         if(page == null || page < 1 || page > pagedListHolder.getPageCount()){
             pagedListHolder.setPage(0);
-            modelAndView.addObject("listBooks", pagedListHolder.getPageList());
+            model.addAttribute("listBooks", pagedListHolder.getPageList());
         }
         else if(page <= pagedListHolder.getPageCount()) {
             pagedListHolder.setPage(page-1);
-            modelAndView.addObject("listBooks", pagedListHolder.getPageList());
+            model.addAttribute("listBooks", pagedListHolder.getPageList());
         }
-
-        modelAndView.addObject("book", new Book());
-
-        return modelAndView;
+        return "books";
     }
 }
