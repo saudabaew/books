@@ -18,7 +18,7 @@
 </head>
 <body>
 
-<form method="post">
+<form method="post" action="/search">
     <label>
         <input name="title" type="text" placeholder="Название книги">
         <input type="submit" value="Поиск">
@@ -34,7 +34,16 @@
             <th>Автор</th>
             <th>ISBN</th>
             <th width="5%">Год печати</th>
-            <th width="5%">Прочтено</th>
+            <th width="5%">
+                <form method="post" action="/books">
+                    <select name="read">
+                        <option value="all">Все</option>
+                        <option value="true">Прочтены</option>
+                        <option value="false">Не прочтены</option>
+                    </select>
+                    <p><input type="submit" value="Применить"></p>
+                </form>
+            </th>
             <th>Операции</th>
         </tr>
         <c:forEach items="${listBooks}" var="book">
