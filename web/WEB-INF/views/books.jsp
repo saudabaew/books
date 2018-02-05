@@ -30,11 +30,11 @@
         <tr>
             <th width="2%">ID</th>
             <th>Название</th>
-            <th width="50%">Описание</th>
+            <th width="45%">Описание</th>
             <th>Автор</th>
             <th>ISBN</th>
             <th width="5%">Год печати</th>
-            <th width="5%">
+            <th width="10%">
                 <form method="post" action="/books">
                     <select name="read">
                         <option value="all">Все</option>
