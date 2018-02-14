@@ -1,6 +1,6 @@
 <h1>Bookcase</h1>
 
-![alt text](books/1.PNG)
+![ScreenShot](/1.PNG)
 
 CRUD web приложение "Книжная полка". Использует:
 
