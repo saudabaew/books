@@ -1,5 +1,6 @@
 <h1>Bookcase</h1>
-![Screenshot](Главная страница.PNG)
+
+![List](/1.png?raw=true "List")
 
 CRUD web приложение "Книжная полка". Использует:
 
