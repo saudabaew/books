@@ -1,6 +1,6 @@
 <h1>Bookcase</h1>
 
-![List](/1.png?raw=true "List")
+![alt text](books/1.PNG)
 
 CRUD web приложение "Книжная полка". Использует:
 
